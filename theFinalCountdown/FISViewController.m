@@ -96,6 +96,8 @@
     [self.resumeButton setHidden:YES];
     [self.startButton setHidden:YES];
     [self.pauseButton setHidden:NO];
+    
+    self.countingDown = [NSTimer scheduledTimerWithTimeInterval:1 target:self selector:@selector(countdown) userInfo:nil repeats:YES];
 }
 
 -(void)countdown{
